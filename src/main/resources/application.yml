@@ -1,0 +1,22 @@
+--- 
+#
+spring.profiles.active: tcp
+
+tcp:
+  host: 192.168.178.28
+  port: 3333
+
+influxdb:
+  hostname: 192.168.178.28
+  port: 8086
+  database: p1
+  username: root
+  password: root
+
+spring.main.web-environment: false
+
+logging.level:
+  org.springframework.context.annotation.AnnotationConfigApplicationContext: ERROR
+  org.springframework.jmx.export.annotation.AnnotationMBeanExporter: ERROR
+
+logging.path: /tmp
